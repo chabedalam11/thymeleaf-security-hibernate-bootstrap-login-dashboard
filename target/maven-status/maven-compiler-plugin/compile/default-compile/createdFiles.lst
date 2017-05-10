@@ -1,0 +1,11 @@
+com\msms\service\UserService.class
+com\msms\repository\UserRepository.class
+com\msms\repository\RoleRepository.class
+com\msms\configuration\WebMvcConfig.class
+com\msms\service\UserServiceImpl.class
+com\msms\controller\LoginController.class
+com\msms\configuration\SecurityConfiguration.class
+com\msms\ApplicationStart.class
+com\msms\model\User.class
+com\msms\model\Role.class
+com\msms\configuration\CustomizationBean.class
