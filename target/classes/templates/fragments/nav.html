@@ -1,0 +1,54 @@
+<div th:fragment="nav">
+   <div id="row topbar" style="height: 39px;">
+		<img src="../../Images/bg.png" id="bg" alt="background image" /> <img
+			src="../../Images/topbarbg.png" id="topbarBg" alt="top bar" /> <img
+			src="../../Images/topbarseparator.png" id="topbarSeparator"
+			alt="top bar separator" /> <img src="../../Images/whitelogo.png"
+			id="whiteLogo" alt="white logo" /> <img
+			src="../../Images/leftpanelbg.png" id="leftPanelBg" alt="left panel" />
+		<img src="../../Images/headerbg.png" id="headerBg" alt="header" /> <img
+			src="../../Images/calender.png" id="calender" alt="calender" />
+		<div id="datePanel">
+			<script type="text/javascript">
+				document.writeln(moment().format('DD/MM/YYYY'));
+			</script>
+			&nbsp;&nbsp;&nbsp;&nbsp;&brvbar;&nbsp;&nbsp;&nbsp;
+			<script src="../../Scripts/locale/ar-sa.js"></script>
+			<script type="text/javascript">
+				document.writeln(moment().format('iYYYY/iMM/iDD'));
+			</script>
+		</div>
+		<div id="formInfo">
+			<label ID="lblFormInfo"></label> <select ID="ddlLanguage"
+				name="ddlLanguage">
+				<option value="LANG2">English</option>
+				<option value="LANG1">Arabic</option>
+			</select>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="row header">
+		<div id="user">
+			<img src="../../Images/user.png" id="usericon" alt="user icon" />
+		</div>
+		<div id="userName">
+			<label ID="lblUserName"></label>
+		</div>
+		<div id="logo">
+			<!--  <img src="../../Images/logo.png" alt="logo" /> -->
+			<img src="../../Images/m-medisys-logo.png" alt="logo"
+				style="padding-left: 14px;" />
+		</div>
+		<div id="title">
+			<span class="red">Rufaida</span>&nbsp;<span class="gray">Pharmacy</span>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="options">
+		<button ID="btnDdi" class="Button Transaction dsgnmoo">Drug-Drug Interaction</button><br/>
+		<button ID="btnFi" class="Button Transaction">Food Interaction</button><br/>
+		<button ID="btnSw" class="Button Transaction">Special Warnings</button><br/>
+		<button ID="btnDf" class="Button Transaction">Drug Formulary</button><br/>
+		<button ID="btnPa" class="Button Transaction">Prescription Analysis</button>
+	</div>
+</div>
